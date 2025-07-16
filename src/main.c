@@ -2,8 +2,9 @@
 #include "stringlib.h"
 
 int main() {
-    // add tests here
     char* test = "hello_world";
-    printf("%d", len(test));
+    printf("length of string: %d\n", len(test));
+
+    printf("%s", substr(test, 2, 5));
     return 0;
 }
