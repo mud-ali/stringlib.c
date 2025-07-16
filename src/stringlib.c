@@ -18,4 +18,21 @@ char* substr(char* str, int begin, int end) {
   return new_str;
 }
 
-int find(char* str, char* substr) {}
+int compare(char* str, char* other) {
+    int length_one = len(str);
+    int length_two = len(other);
+    if (length_two > length_one) return 1;
+    if (length_two < length_one) return -1;
+
+    int i;
+    for (i=0;i<length_one;i++) {
+        int diff = str[i] - other[i];
+        if (diff == 0) continue;
+        return diff;
+    }
+    return 0;
+}
+
+int equals(char* str, char* other) {
+    return compare(str, other) == 0;
+}
