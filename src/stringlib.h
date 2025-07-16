@@ -1,3 +1,7 @@
+/**
+ * @return length of specified string, not including the null terminator
+ * @param str the string to return the length of
+ */
 int len(char* str);
 
 /**
