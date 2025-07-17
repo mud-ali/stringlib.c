@@ -46,3 +46,15 @@ int uppercase(char* str) {
   }
   return ret;
 }
+
+int lowercase(char* str) {
+  int i;
+  int ret = 0;
+  for (i = 0; i < len(str); i++) {
+    if (str[i] >= 'A' && str[i] <= 'Z') {
+      ret++;
+      str[i] += 32;
+    }
+  }
+  return ret;
+}

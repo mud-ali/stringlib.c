@@ -3,7 +3,7 @@
 #include "stringlib.h"
 
 int main() {
-  char test[] = "helLo_wo5ld";
+  char test[] = "HELLO_WO5LD";
   printf("length of string: %d\n", len(test));
 
   printf("Substring: %s\n", substr(test, 2, 5));
@@ -15,8 +15,9 @@ int main() {
   printf("compare unequal strings: %d\n",
          compare(different, equivalent));  // positive number
 
-  int z = uppercase(test);
-  printf("Uppercase version of a string: %s\n", test);
+  int z = lowercase(test);
+  printf("lowercase version of a string: %s\n", test);
+  printf("Updated %d chars", z);
 
   return 0;
 }

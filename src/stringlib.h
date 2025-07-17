@@ -32,3 +32,12 @@ int equals(char* str, char* other);
  * characters
  */
 int uppercase(char* str);
+
+/**
+ * @param str the string to convert to lowercase
+ * @return a count of the uppercase characters updated
+ *
+ * Converts all uppercase english letters to lowercase, ignoring other
+ * characters
+ */
+int lowercase(char* str);
