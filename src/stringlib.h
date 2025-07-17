@@ -41,3 +41,17 @@ int uppercase(char* str);
  * characters
  */
 int lowercase(char* str);
+
+/**
+ * @param str the string to be searched through
+ * @param substr the string to search for
+ * @return first index found
+ */
+int find(char* str, char* substr);
+
+/**
+ * @param str the string to be searched through
+ * @param substr the string to search for
+ * @return 1 if the string is found, 0 if not
+ */
+int contains(char* str, char* substr);

@@ -58,3 +58,18 @@ int lowercase(char* str) {
   }
   return ret;
 }
+
+int find(char* haystack, char* needle) {
+  int i;
+  int needle_len = len(needle) - 1;
+  for (i=0;i<len(haystack)-needle_len;i++) {
+    if (equals(substr(haystack, i, i + needle_len), needle)) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+int contains(char* str, char* needle) {
+  return find(str, needle) != -1;
+}
